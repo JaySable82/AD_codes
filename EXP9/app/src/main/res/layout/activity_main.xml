@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter file name"/>
+
+    <EditText
+        android:id="@+id/dataText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Enter data"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/internalRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal Storage"/>
+
+        <RadioButton
+            android:id="@+id/externalRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External Storage"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"/>
+
+    <Button
+        android:id="@+id/loadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOAD"/>
+</LinearLayout>
